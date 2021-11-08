@@ -13,14 +13,13 @@
         keymap {
                 compatible = "zmk,keymap";
 
-// ---------------------------------- 0 Default ---------------------------
-// | TAB  | Q | W | E   | R   | T    |   | Y   | U   | I   | O | P | RET  |
-// | CTRL | A | S | D   | F   | G    |   | H   | J   | K   | L | ; | '    |
-// | SHFT | Z | X | C   | V   | B    |   | N   | M   | ,   | . | / | SHFT |
-// |      |   |   | ALT | GUI | BSPC |   | SPC | Num | SYM |   |   |      |
-// ------------------------------------------------------------------------
-
                 default_layer {
+					// ---------------------------------- 0 Default ---------------------------
+					// | TAB  | Q | W | E   | R   | T    |   | Y   | U   | I   | O | P | RET  |
+					// | CTRL | A | S | D   | F   | G    |   | H   | J   | K   | L | ; | '    |
+					// | SHFT | Z | X | C   | V   | B    |   | N   | M   | ,   | . | / | SHFT |
+					// |      |   |   | ALT | GUI | BSPC |   | SPC | Num | SYM |   |   |      |
+					// ------------------------------------------------------------------------
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T      &kp Y     &kp U &kp I     &kp O   &kp P    &kp RET
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G      &kp H     &kp J &kp K     &kp L   &kp SEMI &kp SQT
