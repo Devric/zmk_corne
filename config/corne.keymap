@@ -56,37 +56,20 @@
                         	  &kp LALT &kp LGUI  &kp BSPC     &kp SPACE &mo 3     &mo 2
                     >;
                 };
+
+				//  ------------------------------------- 3 Functions -------------------------------------------------
+				//  | F1       | F2       | F3  | F4     | F5   | F6   |     | F7   | F8   | F9     | F10 | F11 | F12 |
+				//  | BTCLR    | BT1      | BT2 | BT3    | BT4  | BT5  |     | HOME | LFT  | DWN    | UP  | RGT | END |
+				//  |          |          |     | V MUTE | V DN | V UP |     |      | P UP | P DOWN |     |     |     |
+				//  | prtscr 3 | prtscr 4 |     |        | BSPC |      | SPC | LOW  | RSE  |        |     |     |     |
+				//  ---------------------------------------------------------------------------------------------------
+				fn_layer {
+					bindings = <
+   &kp F1        &kp F2         &kp F3       &kp F4        &kp F5       &kp F6           &kp F7     &kp F8    &kp F9    &kp F10   &kp F11  &kp F12
+   &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4     &kp PG_UP  &kp HOME  &kp UP    &kp END   &trans   &trans
+   &kp LS(LG(3)) &kp LS(LG(4))  &trans       &kp K_MUTE    &kp K_VOL_DN &kp K_VOL_UP     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &trans   &trans
+                                             &trans        &trans       &kp DELETE       &kp SPACE  &mo 3     &mo 3
+                    >;
+                };
         };
 };
-
-/*
- * {
- *         keymap {
- * 
- *               raise_layer {
- *                       bindings = <
- *  &kp TILDE  &kp EXCL &kp AT &kp HASH &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSLH
- *  &kp LCTRL  &trans   &trans &trans   &trans    &trans       &kp MINUS &kp EQUAL &kp PIPE        &kp LBRC &kp RBRC &kp GRAVE
- *  &kp LSHFT  &trans   &trans &trans   &trans    &trans       &kp UNDER &kp PLUS  &trans          &kp LBKT &kp RBKT &kp RSHFT
- *                       	  &kp LALT &kp LGUI  &kp BSPC     &kp SPACE &mo 3     &mo 2
- *                       >;
- *               };
- * 
- *  ------------------------------------- 3 Functions -------------------------------------------------
- *  | F1       | F2       | F3  | F4     | F5   | F6   |     | F7   | F8   | F9     | F10 | F11 | F12 |
- *  | BTCLR    | BT1      | BT2 | BT3    | BT4  | BT5  |     | HOME | LFT  | DWN    | UP  | RGT | END |
- *  |          |          |     | V MUTE | V DN | V UP |     |      | P UP | P DOWN |     |     |     |
- *  | prtscr 3 | prtscr 4 |     |        | BSPC |      | SPC | LOW  | RSE  |        |     |     |     |
- *  ---------------------------------------------------------------------------------------------------
- *               fn_layer {
- *                       bindings = <
- *  &kp F1        &kp F2         &kp F3       &kp F4        &kp F5       &kp F6           &kp F7     &kp F8    &kp F9    &kp F10   &kp F11  &kp F12
- *  &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4     &kp PG_UP  &kp HOME  &kp UP    &kp END   &trans   &trans
- *  &kp LS(LG(3)) &kp LS(LG(4))  &trans       &kp K_MUTE    &kp K_VOL_UP &kp K_VOL_UP     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &trans   &trans
- *                                            &trans        &trans       &kp DELETE       &kp SPACE  &mo 3     &mo 3
- *                       >;
- *               };
- *         };
- * };
- *
- */
